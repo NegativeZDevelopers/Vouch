@@ -150,4 +150,4 @@ async def vouches(ctx:commands.Context,user:discord.User="self"):
     await ctx.send(f"Vouches for {user.display_name}:\n{vouch_list}")
 
 
-client.run(tn)
+client.run(tn[0])
