@@ -4,6 +4,10 @@ from discord.ext import commands
 import asyncio
 from datetime import datetime, timedelta
 from pyjokes import get_joke as gjoke
+from load import json
+
+with open('token.json') as tj:
+    tn=load(tj)
 client = commands.Bot(command_prefix="+", intents = discord.Intents.all())
 databasev=1.1
 conn = sqlite3.connect(f'vouch_db_{databasev}.sql')
@@ -146,4 +150,4 @@ async def vouches(ctx:commands.Context,user:discord.User="self"):
     await ctx.send(f"Vouches for {user.display_name}:\n{vouch_list}")
 
 
-client.run("MTIyODU2MDkzNDYyOTQxMjkyOA.GcJv3Y.4lzZKwCXOTGoXgXS4zJcd7ofBohOh5jlM8VrnY")
+client.run(tn)
