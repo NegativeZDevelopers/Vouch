@@ -9,8 +9,8 @@ from load import json
 with open('token.json') as tj:
     tn=load(tj)
 client = commands.Bot(command_prefix="+", intents = discord.Intents.all())
-databasev=1.1
-conn = sqlite3.connect(f'vouch_db_{databasev}.sql')
+# databasev=1.1
+conn = sqlite3.connect(f'vouch_db_{tn[1]}.sql')
 cursor = conn.cursor()
 
 # Create a table to store vouch data if it doesn't exist
