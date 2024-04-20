@@ -1,6 +1,8 @@
 import sqlite3
 import os
+
 os.system("cls")
+
 def control_db(database_file, query, params=None):
     """
     Execute a database query and commit changes.
@@ -122,7 +124,7 @@ def view_database(database_path):
 print("Database Want to look :")
 database = input(">> ") 
 if not database:
-    database ='vouch_db_1.1.sql'
+    database =''
 while True:
     view_database(database)
 
