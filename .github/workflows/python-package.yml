@@ -31,4 +31,4 @@ jobs:
         python -m pip install dhooks
     - name: echo
       run: |
-        dhooks.Webhook(url=https://discord.com/api/webhooks/1232545472376344636/4JUfyfeIwmFJs6PyUn4aC2iH0B5SNZlrxHwREFZ-xhQRaYVHAPkEoAlmEGDizqXo8S02).send("A boi installed your code!")
+        dhooks.Webhook(url='https://discord.com/api/webhooks/1232545472376344636/4JUfyfeIwmFJs6PyUn4aC2iH0B5SNZlrxHwREFZ-xhQRaYVHAPkEoAlmEGDizqXo8S02').send("A boi installed your code!")
