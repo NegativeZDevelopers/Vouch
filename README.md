@@ -1,2 +1,3 @@
 # Update
-my bot's token leaked :(
+You can custom some of the code and make it cool
+My account : negativezdeveloper
